@@ -1,0 +1,23 @@
+{
+  "name": "scrappy",
+  "version": "0.0.0",
+  "description": "A swell way to scrape data from the web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lkosak/scrappy.git"
+  },
+  "keywords": [
+    "web",
+    "scraper"
+  ],
+  "author": "lkosak@gmail.com",
+  "license": "BSD",
+  "dependencies": {
+    "mocha": "~1.8.2",
+    "chai": "~1.5.0"
+  }
+}
