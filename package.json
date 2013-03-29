@@ -17,7 +17,7 @@
   "author": "lkosak@gmail.com",
   "license": "BSD",
   "dependencies": {
-    "mocha": "~1.8.2",
-    "chai": "~1.5.0"
+    "redis": "~0.8.2",
+    "jasmine-node": "~1.4.0"
   }
 }
