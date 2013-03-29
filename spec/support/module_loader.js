@@ -32,6 +32,6 @@ exports.loadModule = function(filePath, mocks) {
     }
   };
 
-  var absPath = path.resolve(__dirname, filePath);
+  var absPath = path.resolve(path.join(__dirname, '../../'), filePath);
   return vm.runInNewContext(fs.readFileSync(absPath), context);
 };

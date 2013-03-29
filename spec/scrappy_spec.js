@@ -1,4 +1,4 @@
-var jasmine = require('jasmine-node');
+require('./spec_helper')
 
 describe("Scrappy", function () {
   it("should know its version", function () {
