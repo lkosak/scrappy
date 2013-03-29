@@ -1,17 +1,17 @@
 # Holy crappy, it's *SCRAPPY*!
 What the heck is scrappy? Why, it's only the
+
 - latest
 - greatest
 - root-toot'n-est
+
 way to scrape little bits of information from the web!
 
 # Requirements
 - node.js 0.8.x
 - redis
-- hope
 
 # Installation
-
 Clone from here, or install with npm:
 
     npm install scrappy
@@ -21,7 +21,6 @@ Include in your app:
     var Scrappy = require('scrappy');
 
 # Configuration
-
 Set yourself up an instance of ol' scrappy:
 
     var options = {
@@ -35,7 +34,6 @@ Set yourself up an instance of ol' scrappy:
     var client = new Scrappy(options);
 
 # Usage
-
 Create a page handler:
 
     function userPageHandler(page) {
@@ -71,20 +69,18 @@ Run that thing.
 # Concepts
 
 ## The Big Picture
-
 Here's how scrappy works:
 
-- Scrappy maintains a queue of pages that haven't been crawled ("**targets**")
-- You tell scrappy how to handle certain kinds of pages ("**page handlers**")
+- Scrappy maintains a queue of pages that haven't been crawled (**"targets"**)
+- You tell scrappy how to handle certain kinds of pages (**"page handlers"**)
 - Scrappy keeps crawling pages until there aren't any more pages to crawl.
 
 ## Page Handlers:
-
 A page handler receives a `page` object. That object has a couple attributes:
 
-- `url`: The URL of the page
-- `headers`: The response headers from the request
-- `body`: The raw body of the page
+- `url` The URL of the page
+- `headers` The response headers from the request
+- `body` The raw body of the page
 
 Page handlers can do whatever they like with pages. Some popular options:
 
@@ -97,12 +93,12 @@ That's pretty much it! Of course, you can do whatever you like, but these are
 the core of making scrappy run around a website and visit lots of pages.
 
 ## Targets:
-
 Individual pages that you want scrappy to visit. Once a page has been fetched,
 scrappy will try to find a page handler to hand it off to (based on the matcher
 provided in the `addHandler` call).
 
 **Some things to note:**
+
 - If no page handler can be found for a given target, scrappy won't do anything
   with it. He'll just throw it away! Not a big deal -- he doesn't mind -- but
   it seems like a waste, doesn't it?
@@ -113,7 +109,6 @@ provided in the `addHandler` call).
   you're being silly. Let me know if this is cramping your style!
 
 # License
-
 (The MIT License)
 
 Copyright (c) 2013 Lou Kosak &lt;lkosak [at] gmail [dot] com&gt;
